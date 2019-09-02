@@ -1,0 +1,38 @@
+@charset "UTF-8";
+.bigbody{
+	height:100%;
+	background: radial-gradient( #CFCFCF,#3D3D3D);
+	background-repeat: no-repeat;
+	background-attachment: fixed
+	}
+.topbanner{
+	border: 25px solid #000000;
+	opacity:0.2;
+	overflow-x: hidden;
+	background-color:#000000;
+	}
+.full{
+	width:1024px;
+	margin-left:auto;
+	margin-right:auto;}
+
+.body{
+	width:1024px;
+	height:100%;
+	margin-left:auto;
+	margin-right:auto;
+}
+.title{
+    font-family:Avenir;
+    font-weight:100;
+    color:white;
+    text-align:center;
+}
+#flip{
+    text-align:center;
+    font-size:100px;
+    color:white;
+    margin-top:100px;
+}
+/* CSS Document */
+

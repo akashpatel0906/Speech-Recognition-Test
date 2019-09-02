@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<link href="index.css" rel="stylesheet" type="text/css">
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/annyang/1.1.0/annyang.min.js"></script>
+<script>
+window.onload = function(){
+    if (annyang) {
+        var commands = {
+            'My name is Akash': Akash,
+            'My name is Arnav': Arnav,
+            'Flip a Coin': CoinFlip,
+            'Reset Coin': herro
+        };
+        annyang.addCommands(commands);
+        annyang.start(); 
+    }
+}
+var Akash = function() {
+  alert('You are a boss!');
+}
+var Arnav = function() {
+  alert("You suck!")
+}
+var CoinFlip= function(){
+    if (Math.random()<=0.5){
+    		document.getElementById("flip").innerHTML = "HEADS!" ;
+			} 
+		else {
+			document.getElementById("flip").innerHTML = "TAILS!" ;
+		}
+}
+var herro= function() {
+    	document.getElementById("flip").innerHTML = "" ;
+	}
+</script>
+</head>
+<body class="bigbody">
+<div class="topbanner" align="center"></div>
+    <div class="full">
+	<div class="body"></div>
+<h1 class="title">Spech Recognition (Does it Work?)</h1>
+<p id="flip"></p>
+    
+</body>
+</html>
